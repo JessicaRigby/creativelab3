@@ -1,0 +1,53 @@
+    body,h1 {
+        font-family: "Raleway", sans-serif
+    }
+
+    body,html {
+        height: 100%
+    }
+
+    .bgimg {
+        background-image: url('http://ralphlauren.scene7.com/is/image/RLContent/20160803_baby_feat_c01?scl=1');
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .text{
+      padding: 10px;
+    }
+      
+      /* Horizontal Sortable */
+      .hthumbnail[jqyoui-droppable] { border: 3px solid #9a8c98; }
+      .hthumbnail {
+        height: 50px;
+        width: 40px;
+        text-align: center;
+        padding-top: 0px;
+        cursor: pointer;
+        background: #ffffff;
+        position: relative;
+        -webkit-transition: none;
+        transition: none;
+      }
+      .hthumbnail.ng-leave {
+        -webkit-transition-duration: 0s;
+        transition-duration: 0s;
+        opacity: 1;
+      }
+      .hthumbnail.ng-leave.ng-leave-active {
+        opacity: 0;
+      }
+      .hthumbnail.ng-enter {
+        -webkit-transition: left 0.3s;
+        transition: left 0.3s;
+      }
+      .hthumbnail.ng-enter[data-direction="left"] {
+        left: -80px; /* 60px width + 20px marginLeft */
+      }
+      .hthumbnail.ng-enter[data-direction="right"] {
+        left: 80px; /* 60px width + 20px marginLeft */
+      }
+      .hthumbnail.ng-enter.ng-enter-active {
+        left: 0px;
+      }
